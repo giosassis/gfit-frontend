@@ -31,7 +31,7 @@ function PersonalRegistrationForm() {
     onSubmit: async (values) => {
       try {
         const response = await axios.post(
-          "https://localhost:7187/api/Personal",
+          "http://3.91.118.149:5001/api/Personal",
           values,
           {
             headers: {
@@ -46,7 +46,7 @@ function PersonalRegistrationForm() {
           console.error("Erro no cadastro");
         }
       } catch (error) {
-        console.error("Erro na requisição:", error);
+        console.error("Erro na requisição:", error.response.data);
       }
     },
   });

@@ -4,9 +4,12 @@ import "./Home.css";
 function Home() {
   return (
     <div className="container">
+      <header>
+      <img className="picture-container" src={require("./Assets/logo-sem-fundo.png")} alt=""/>  
+      </header>
       <section className="main-content">
-        <h1>Bora ajudar a democratizar ao acesso a Personal Trainer? </h1>
-        <h2>Conta com a gente!</h2>
+        <h1>Transforme sua vida com a orientação de profissionais comprometidos com a sua jornada. </h1>
+        <h2>Junte-se ao nosso time!</h2>
       </section>
       <section className="btn-choice">
         <Link to="/personal">
