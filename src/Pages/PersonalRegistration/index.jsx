@@ -31,7 +31,7 @@ function PersonalRegistrationForm() {
     onSubmit: async (values) => {
       try {
         const response = await axios.post(
-          "http://3.91.118.149:5001/api/Personal",
+          "https://localhost:7187/api/Personal",
           values,
           {
             headers: {
@@ -67,7 +67,6 @@ function PersonalRegistrationForm() {
             <div className="error">{formik.errors.name}</div>
           ) : null}
         </div>
-        {/* Repita o padrão para os outros campos */}
         <div className="form-group">
           <input
             type="email"
@@ -79,7 +78,6 @@ function PersonalRegistrationForm() {
             <div className="error">{formik.errors.email}</div>
           ) : null}
         </div>
-        {/* Repita o padrão para os outros campos */}
         <div className="form-group">
           <input
             type="password"
@@ -91,7 +89,6 @@ function PersonalRegistrationForm() {
             <div className="error">{formik.errors.password}</div>
           ) : null}
         </div>
-        {/* Repita o padrão para os outros campos */}
         <div className="form-group">
           <input
             type="cref"
@@ -103,7 +100,6 @@ function PersonalRegistrationForm() {
             <div className="error">{formik.errors.cref}</div>
           ) : null}
         </div>
-        {/* Repita o padrão para os outros campos */}
         <div className="form-group">
           <textarea
             id="description"
