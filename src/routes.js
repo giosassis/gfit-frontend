@@ -12,7 +12,7 @@ function RoutesApp() {
         <Route path="/" element={<Home />} />
         <Route path="/cadastro-personal" element={<PersonalRegistrationPage />} />
         <Route path="/personal" element={<Personal />} />
-        <Route path="/verificar-email/:email/:token" element={<EmailVerification />} />
+        <Route path="/confirmacao/:email/:token" element={<EmailVerification />} />
         <Route path="/confirmacao" element={<ConfirmationPage />} />
       </Routes>
     </BrowserRouter>
