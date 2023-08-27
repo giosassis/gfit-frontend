@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# gFit - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the documentation for the frontend of the **gFit** project! This documentation provides information about the structure, configuration, and functionality of the application's frontend.
 
-## Available Scripts
+## About the Project
 
-In the project directory, you can run:
+**gFit** is an application developed for personal trainers and users who seek practicality when practicing physical activity, to have their training in the palm of their hand, anywhere, anytime.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Axios for API requests
+- React Router for routing
+- Tailwind CSS for Style
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Environment Setup
 
-### `npm test`
+1. Clone this repository to your local machine.
+2. Install dependencies using the command: `npm install`.
+3. Start the development server: `npm start`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- User Registration and Login
+- Password Reset
+- Email Confirmation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project is organized as follows:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `src`: Contains the main source code files.
+  - `components`: Contains reusable UI components.
+  - `pages`: Contains page-level components.
+  - `services`: Contains API service modules.
+  - `utils`: Contains utility functions and helpers.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To use the application:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Register/Login to access the features.
+2. Navigate through the application using the provided links and buttons.
+3. [Instructions on how to use specific features]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribution
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions are welcome! If you'd like to contribute to this project, follow these steps:
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch: `git checkout -b new-feature`.
+3. Make your changes and commit: `git commit -m 'Add new feature'`.
+4. Push to the branch: `git push origin new-feature`.
+5. Create a Pull Request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you have any questions or feedback, feel free to contact me at giovana.sant@hotmail.com.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
