@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import emailVerificationService from '../Service/emailVerificationService';
 
 function EmailVerification() {
   const { email, token } = useParams();
@@ -8,23 +9,12 @@ function EmailVerification() {
 
   useEffect(() => {
     async function verifyAndConfirmEmail() {
-      try {
-        const verifyResponse = await fetch(
-          `https://localhost:7187/api/EmailConfirmation/confirm?email=${encodeURIComponent(
-            email
-          )}&token=${encodeURIComponent(token)}`
-        );
+      const verificationResult = await emailVerificationService.verifyAndConfirmEmail(email, token);
 
-        if (verifyResponse.ok) {
-          setIsLoading(false);
-          navigate("/confirmacao");
-        } else {
-          console.error("Erro ao verificar/confirmar e-mail");
-          setIsLoading(false);
-        }
-      } catch (error) {
-        console.error("Erro ao verificar/confirmar e-mail", error);
-        setIsLoading(false);
+      setIsLoading(false);
+
+      if (verificationResult) {
+        navigate('/confirmacao');
       }
     }
 

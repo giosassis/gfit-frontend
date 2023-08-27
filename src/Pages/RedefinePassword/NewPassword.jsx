@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import resetPasswordService from "../../Service/resetPasswordService";
 import { useParams } from "react-router-dom";
 
 function NovaSenha() {
@@ -17,20 +17,15 @@ function NovaSenha() {
         return;
       }
 
-      const response = await axios.post(
-        `https://localhost:7187/api/Auth/reset-password`,
-        {
-          email,
-          token,
-          newPassword,
-        }
-      );
+      const resetResult = await resetPasswordService.resetPassword(email, token, newPassword);
 
-      if (response.status === 200) {
+      if (resetResult) {
         setSuccessMessage("Senha redefinida com sucesso.");
+      } else {
+        setErrorMessage("Ocorreu um erro ao redefinir a senha.");
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
       setErrorMessage("Ocorreu um erro ao redefinir a senha.");
     }
   };
