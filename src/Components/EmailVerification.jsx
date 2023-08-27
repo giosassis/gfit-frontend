@@ -14,22 +14,16 @@ function EmailVerification() {
             email
           )}&token=${encodeURIComponent(token)}`
         );
-        console.log(verifyResponse, email, token);
 
         if (verifyResponse.ok) {
-          const confirmResponse = await fetch(
-            `https://localhost:7187/api/EmailConfirmation/confirm?email=${encodeURIComponent(
-              email
-            )}&token=${encodeURIComponent(token)}`
-          );
-
-          if (confirmResponse.ok) {
-            navigate("/confirmacao");
-          }
+          setIsLoading(false);
+          navigate("/confirmacao"); // Redirecionar para a página de confirmação
+        } else {
+          console.error("Erro ao verificar/confirmar e-mail");
+          setIsLoading(false);
         }
       } catch (error) {
         console.error("Erro ao verificar/confirmar e-mail", error);
-      } finally {
         setIsLoading(false);
       }
     }

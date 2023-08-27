@@ -38,7 +38,9 @@ function Personal() {
         <Link to="/cadastro-personal">
           <button className="btn-choice"> Fazer Cadastro </button>
         </Link>
+        <Link to="/login">
         <button className="btn-choice"> Já tenho uma conta </button>
+        </Link>
       </section>
     </div>
   );
