@@ -16,12 +16,9 @@ function LoginPage() {
 
       if (response.status === 200) {
         const token = response.data.token;
-        // Armazenar o token no localStorage ou sessionStorage
         localStorage.setItem('token', token);
-        // Redirecionar para outra página após o login
-        window.location.href = '/dashboard'; // Substitua pela rota desejada
+        window.location.href = '/dashboard'; 
       } else {
-        // Lidar com o erro de autenticação
       }
     } catch (error) {
       setErrorMessage('Credenciais inválidas. Verifique seu email e senha.');

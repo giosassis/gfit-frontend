@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import * as yup from "yup"; // Importe o yup
-import { useFormik } from "formik"; // Importe o useFormik para gerenciar o formulário
+import * as yup from "yup"; 
+import { useFormik } from "formik"; 
 import './style.css';
 
 function PersonalRegistrationForm() {

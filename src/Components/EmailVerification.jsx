@@ -17,7 +17,7 @@ function EmailVerification() {
 
         if (verifyResponse.ok) {
           setIsLoading(false);
-          navigate("/confirmacao"); // Redirecionar para a página de confirmação
+          navigate("/confirmacao");
         } else {
           console.error("Erro ao verificar/confirmar e-mail");
           setIsLoading(false);
